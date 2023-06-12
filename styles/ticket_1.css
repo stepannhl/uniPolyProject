@@ -1,0 +1,179 @@
+.pinguin {
+    position: relative;
+    display: block;
+    margin: auto;
+    height: 300px;
+    width: 300px;
+}
+
+.pinguin * {
+    position: absolute;
+}
+
+.pinguin-hat {
+    left: 32.5%;
+    height: 55px;
+    width: 110px;
+    background: rgb(238,200,144);
+    background-image: radial-gradient(circle, rgba(238,200,144,1) 0%, rgba(206,123,83,1) 35%, rgba(180,63,40,1) 100%);
+    background-position-x: -24px;
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    z-index: 1;
+}
+
+.pinguin-hat-dot {
+    left: 38.5%;
+    top: -15%;
+    height: 17px;
+    width: 23px;
+    background: rgb(237,207,91);
+    background-image: radial-gradient(circle, rgb(241, 227, 170) 0%, rgba(221,168,70,1) 40%, #CD8230 100%);
+    background-position-x: -50px;
+    border-radius: 100%;
+    z-index: 2;
+}
+
+.pinguin-hat-bottom-border {
+    top: 17%;
+    left: 30%;
+    height: 10px;
+    width: 124px;
+    background-color: #D08935;
+    border-radius: 10px 10px 10px 10px;
+    z-index: 2;
+}
+
+.pinguin-body {
+    left: 30%;
+    top: 10%;
+    background-color: #272526;
+    height: 181px;
+    width: 124px;
+    border-radius: 60%;
+}
+
+.pinguin-left-eye-circle {
+    left: 10%;
+    top: 20%;
+    background-color: #FFFFFF;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.pinguin-left-eye-dot {
+    left: 22%;
+    top: 25%;
+    background-color: black;
+    background: black(237,207,91);
+    background-image: radial-gradient(circle, white 0%, rgb(27, 27, 27) 30%, black 100%);
+    background-position: -2px -3px;
+    height: 20px;
+    width: 14px;
+    border-radius: 80%;
+    z-index: 1;
+}
+
+.pinguin-right-eye-dot {
+    left: 40%;
+    top: 25%;
+    background: black(237,207,91);
+    background-image: radial-gradient(circle, white 0%, rgb(27, 27, 27) 30%, black 100%);
+    background-position: -2px -3px;
+    height: 20px;
+    width: 14px;
+    border-radius: 80%;
+    z-index: 2;
+}
+
+.pinguin-right-eye-circle {
+    left: 47%;
+    top: 20%;
+    background-color: #FFFFFF;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.pinguin-body-circle {
+    left: 13%;
+    top: 31%;
+    background-color: #FFFFFF;
+    height: 120px;
+    width: 90px;
+    border-radius: 60%;
+    z-index: 0;
+}
+
+.pinguin-left-hand {
+    left: -10%;
+    top: 30%;
+    background-color: black;
+    height: 96px;
+    width: 32px;
+    transform: rotate(40deg);
+    border-radius: 100%;
+    z-index: -1;
+}
+
+.pinguin-right-hand {
+    left: 85%;
+    top: 30%;
+    background-color: black;
+    height: 96px;
+    width: 32px;
+    transform: rotate(-40deg);
+    border-radius: 100%;
+    z-index: -1;
+}
+
+.pinguin-left-leg {
+    left: 40%;
+    top: 66%;
+    height: 0px;
+    width: 0px;
+    z-index: -1;
+    border-left: 11px solid transparent;
+    border-right: 14px solid transparent;
+    transform: rotate(180deg);
+    border-bottom: 24px solid #DC8513;
+}
+
+.pinguin-right-leg {
+    left: 51%;
+    top: 66%;
+    height: 0px;
+    width: 0px;
+    z-index: -1;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    transform: rotate(180deg);
+    border-bottom: 25px solid #DC8513
+}
+
+.pinguin-left-nose {
+    left: 34%;
+    top: 43%;
+    height: 0px;
+    width: 0px;
+    z-index: 1;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    transform: rotate(-90deg);
+    border-bottom: 14px solid #F2CE3F;
+}
+
+.pinguin-right-nose {
+    left: 45%;
+    top: 43%;
+    height: 0px;
+    width: 0px;
+    z-index: 1;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    transform: rotate(90deg);
+    border-bottom: 14px solid #DC8513;
+}

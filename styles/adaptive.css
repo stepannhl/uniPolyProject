@@ -1,0 +1,46 @@
+@media screen and (min-width: 1300px) {
+    .ticket {
+        background-color: #D9D9D9;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 0 0 30.33%;
+        padding: 5px;
+        margin: 10px;
+        min-height: 200px;
+        transition: box-shadow 0.3s ease-in-out;
+        border-radius: 20px;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .ticket {
+        background-color: #D9D9D9;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 0 0 90%;
+        padding: 5px;
+        margin: 10px;
+        min-height: 200px;
+        transition: box-shadow 0.3s ease-in-out;
+        border-radius: 20px;
+    }
+    .page_container{
+        flex-direction: column;
+    }
+    .ticket_container{
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 50px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+}

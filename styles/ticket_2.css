@@ -1,0 +1,149 @@
+.container {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    height: min(500px, 80vh);
+    position: relative;
+    background-size: contain;
+    background-position: 50% 50%;
+}
+
+.anim_container {
+    width: 800px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container:active .anim_container .boy {
+    animation: boy 8s infinite;
+}
+
+.container:active .anim_container .brick {
+    animation: brick 8s infinite ease-out;
+}
+
+.container:active .thought_1 {
+    animation: thought_1 8s infinite;
+}
+
+.container:active .thought_2 {
+    animation: thought_2 8s infinite;
+}
+
+.thought_1, .thought_2 {
+    opacity: 0;
+}
+
+.thoughts {
+    margin: 0 auto 0 auto;
+}
+
+.boy {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: url(../static/img/boy1.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.brick {
+    opacity: 0;
+    width: 250px;
+    height: 250px;
+    background: url(../static/img/brick.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    transform-origin: 150px 200px;
+}
+
+@keyframes boy {
+    0%, 10% {
+        background-image: url(../static/img/boy1.png);
+    }
+    11%, 30% {
+        background-image: url(../static/img/boy2.png);
+    }
+    31%, 40% {
+        background-image: url(../static/img/boy3.png);
+        transform: translateX(0%);
+    }
+    41%, 42% {
+        background-image: url(../static/img/boy3.png);
+        transform: translateX(-2%);
+    }
+    43%, 44% {
+        background-image: url(../static/img/boy3.png);
+        transform: translateX(2%);
+    }
+    45%, 46% {
+        background-image: url(../static/img/boy3.png);
+        transform: translateX(-2%);
+    }
+    47%, 48% {
+        background-image: url(../static/img/boy3.png);
+        transform: translateX(2%);
+    }
+    49%, 50% {
+        background-image: url(../static/img/boy3.png);
+        transform: translateX(-2%);
+    }
+    51%, 100% {
+        background-image: url(../static/img/boy3.png);
+        transform: translateX(0%);
+    }
+}
+
+@keyframes brick {
+    0%, 10% {
+        opacity: 0;
+    }
+    11%, 30% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes thought_1 {
+    0%, 15% { 
+    }
+    14%, 30% {
+        opacity: 1;
+    }
+    31%, 100% {
+        opacity: 0;
+    }
+}
+
+@keyframes thought_2 {
+    0%, 10% { 
+    }
+    11%, 30% {
+        opacity: 0;
+    }
+    31%, 100% {
+        opacity: 1;
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(-2%);
+    }
+    75% {
+        transform: translateX(2%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}

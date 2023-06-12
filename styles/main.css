@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container_footer {
+    text-align: center;
+    color: #FFA665;
+}
+
+.page_container {
+    display: flex;
+    flex-direction: row;
+    min-height: 70vh;
+}
+
+body {
+    margin: 0 10% 0 10%;
+    overflow-x: hidden; 
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    color: #FFA665;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+header {
+    min-height: 50px;
+    margin-bottom: 10px; 
+}
+
+footer { 
+    margin-top: 30px;
+    min-height: 50px;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+
+footer .container span {
+    font-size: 1rem;
+    font-weight: 3rem;
+    color: #FFA665;
+}
+
+ul li {
+    padding: 15px 10px;
+    list-style-type: none;
+    text-align: center;
+    background-color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+
+ul li:hover {
+    background-color: #E5E5E5;
+}
+
+ul li a {
+    color: #FFA665;
+    font-size: 2rem;
+}
+
+ul li:hover a {
+    color: black;
+}
+
+hr {
+    height: 2px;
+    border: none;
+    border-top: 1px solid black;
+    padding: 0;
+    width: 100%;
+}
+
+.ticket_container {
+    width: 90%;
+    align-content: flex-start;
+    box-shadow: 0 0 35px 1px #FFA665;
+    border-radius: 35px;
+    margin-top: 10px;
+    margin-left: 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+
+}
+
+.ticket:hover {
+    box-shadow: 0px 0px 5px 2px #FFA665;
+}
+
+.ticket img {
+    max-width: 100%;
+    height: auto;
+    filter: blur(1px);
+}
+
+.ticket span {
+    text-align: center;
+    font-size: 2rem;
+    color: #FFA665;
+}
